@@ -1,0 +1,109 @@
+export const resumeData: ResumeData = {
+    contact: {
+        name: "Edhar Avuzi",
+        phone: "+380956859021",
+        email: "avuzia@gmail.com",
+        github: "https://github.com/Sedose",
+        leetcode: "https://leetcode.com/u/avuzi",
+        blog: "https://medium.com/@avuzia",
+    },
+    profile:
+        "Certified software developer with over 3 years of experience specializing in back-end development...",
+    skills: [
+        "Java",
+        "Kotlin",
+        "JavaScript",
+        "Docker",
+        "Google Cloud Platform",
+        "MongoDB",
+    ],
+    experience: [
+        {
+            role: "Software Engineer",
+            company: "EPAM Systems",
+            startDate: "2023-08-01",
+            endDate: "Present",
+            responsibilities: [
+                "Implemented Apigee proxies...",
+                "Provided OpenAPI documentation...",
+            ],
+        },
+    ],
+    education: [
+        {
+            degree: "Master of Science",
+            field: "Computer Science",
+            university: "NTU 'KhPI'",
+            startDate: "2021-09-01",
+            endDate: "2022-12",
+        },
+    ],
+    certifications: [
+        {
+            title: "Google Cloud Platform: Professional Cloud Developer",
+            organization: "Google",
+            date: "2022-05-01",
+        },
+    ],
+    projects: [
+        {
+            title: "I-EAT",
+            description:
+                "A microservices-based application designed for food ordering and delivery.",
+            technologies: [
+                "Java 8",
+                "TypeScript",
+                "React",
+                "Redux",
+                "Spring Boot",
+            ],
+        },
+    ],
+};
+
+export interface Contact {
+    name: string;
+    phone: string;
+    email: string;
+    github: string;
+    leetcode: string;
+    blog: string;
+}
+
+export interface Experience {
+    role: string;
+    company: string;
+    startDate: string;
+    endDate: string;
+    responsibilities: string[];
+}
+
+export interface Education {
+    degree: string;
+    field: string;
+    university: string;
+    startDate: string;
+    endDate: string;
+}
+
+export interface Certification {
+    title: string;
+    organization: string;
+    date: string;
+}
+
+export interface Project {
+    title: string;
+    description: string;
+    technologies: string[];
+}
+
+export interface ResumeData {
+    contact: Contact;
+    profile: string;
+    skills: string[];
+    experience: Experience[];
+    education: Education[];
+    certifications: Certification[];
+    projects: Project[];
+}
