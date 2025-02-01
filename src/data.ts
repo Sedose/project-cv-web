@@ -7,15 +7,63 @@ export const resumeData: ResumeData = {
         leetcode: "https://leetcode.com/u/avuzi",
         blog: "https://medium.com/@avuzia",
     },
-    profile:
-        "Certified software developer with over 3 years of experience specializing in back-end development...",
+    profile: `
+        Software developer with 4 years of experience, specializing primarily in back-end development. 
+        I have extensive hands-on experience with multiple languages, with a firm understanding of data structures, 
+        algorithms, and software design principles. I hold a bachelor's and master's degree in computer science 
+        and programming engineering. 
+        
+        I am committed to continuous learning and adapting to new technologies, which, combined with my 
+        problem-solving skills and attention to detail, enable me to develop optimized and robust software solutions. 
+        In my past roles, I have proven my ability to work in team environments, always ensuring the software I develop 
+        aligns with business needs and user requirements. 
+        
+        My favourite principle is "Prefer composition over inheritance".
+    `,
     skills: [
+        "English",
         "Java",
         "Kotlin",
         "JavaScript",
-        "Docker",
+        "Unit Testing",
+        "Junit",
+        "Mockito",
+        "Kotest",
+        "mockk",
+        "Git",
+        "Spring Framework",
+        "Spring Core",
+        "Spring Boot",
+        "Apigee",
+        "Telerik Fiddler Classic",
+        "REST API",
+        "SOAP",
         "Google Cloud Platform",
-        "MongoDB",
+        "Firestore",
+        "MySQL",
+        "SOLID",
+        "Dependency injection",
+        "Clean Code",
+        "Design patterns",
+        "Microservices",
+        "Algorithms & Data structures",
+        "Problem-solving",
+        "Functional Programming",
+        "Object-oriented Programming (OOP)",
+        "Java Core",
+        "Postman",
+        "Gradle",
+        "Gitlab",
+        "Jenkins",
+        "Commercetools",
+        "Backend",
+        "React",
+        "Datadog",
+        "HTML",
+        "JSON",
+        "Jira",
+        "OAuth2",
+        "Scala",
     ],
     experience: [
         {
