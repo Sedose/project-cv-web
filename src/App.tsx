@@ -3,10 +3,9 @@ import SkillsComponent from "./components/SkillsComponent.tsx";
 import ExperienceComponent from "./components/ExperienceComponent.tsx";
 import EducationComponent from "./components/EducationComponent.tsx";
 import CertificationsComponent from "./components/CertificationsComponent.tsx";
-import ProjectsComponent from "./components/ProjectsComponent.tsx";
 import {resumeData} from "./data.ts";
 
-const {contact, skills, experience, education, certifications, projects} = resumeData;
+const {contact, skills, experience, education, certifications} = resumeData;
 
 // Reusable SectionHeader Component
 const SectionHeader = ({title}: { title: string }) => (
@@ -42,12 +41,6 @@ const App = () => (
             <div className="mt-6">
                 <SectionHeader title="Certifications"/>
                 <CertificationsComponent certifications={certifications}/>
-            </div>
-
-            {/* Projects Section */}
-            <div className="mt-6">
-                <SectionHeader title="Projects"/>
-                <ProjectsComponent projects={projects}/>
             </div>
         </div>
     </div>

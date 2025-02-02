@@ -70,10 +70,10 @@ export const resumeData: ResumeData = {
             role: "Developer, Engineer",
             company: "EPAM Systems",
             startDate: "Nov 2024",
-            endDate: "Till Now (4 months)",
+            endDate: "Till Now",
             responsibilities: [
                 "Reviewed and standardized unit tests to improve maintainability for several app features.",
-                "Optimized log ingestion volume and reduced number of logs to reduce costs of maintanence.",
+                "Optimized log ingestion by reducing log volume by 30%, which lowered maintenance costs and streamlined data processing.",
                 "Proposed a style guide change to improve version-control diffs and editing efficiency.",
                 "Refactored code to reduce technical debt, accelerating development and feature integration.",
                 "Advocated for using Spring-managed beans over static functions/ static-scoped singletons to enhance maintainability, testability, and development speed.",
@@ -168,32 +168,30 @@ export const resumeData: ResumeData = {
     ],
     education: [
         {
-            degree: "Master of Science",
-            field: "Computer Science",
-            university: "NTU 'KhPI'",
-            startDate: "2021-09-01",
-            endDate: "2022-12",
+            degree: "Master",
+            field: "Computer Science and Software Engineering",
+            university: "KHARKIV POLYTECHNIC INSTITUTE",
+            graduationYear: "2022",
+        }, {
+            degree: "Bachelor",
+            field: "Computer Science and Software Engineering",
+            university: "KHARKIV POLYTECHNIC INSTITUTE",
+            graduationYear: "2021",
         },
     ],
     certifications: [
         {
             title: "Google Cloud Platform: Professional Cloud Developer",
             organization: "Google",
-            date: "2022-05-01",
-        },
-    ],
-    projects: [
-        {
-            title: "I-EAT",
-            description:
-                "A microservices-based application designed for food ordering and delivery.",
-            technologies: [
-                "Java 8",
-                "TypeScript",
-                "React",
-                "Redux",
-                "Spring Boot",
-            ],
+            date: "23 May 2022",
+        },{
+            title: "Associate Java Developer",
+            organization: "commercetools",
+            date: "28 Jun 2023",
+        }, {
+            title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+            organization: "Microsoft",
+            date: "19 Feb 2024",
         },
     ],
 };
@@ -218,20 +216,13 @@ export interface Education {
     degree: string;
     field: string;
     university: string;
-    startDate: string;
-    endDate: string;
+    graduationYear: string;
 }
 
 export interface Certification {
     title: string;
     organization: string;
     date: string;
-}
-
-export interface Project {
-    title: string;
-    description: string;
-    technologies: string[];
 }
 
 export interface ResumeData {
@@ -241,5 +232,4 @@ export interface ResumeData {
     experience: Experience[];
     education: Education[];
     certifications: Certification[];
-    projects: Project[];
 }

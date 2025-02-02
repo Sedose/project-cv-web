@@ -10,7 +10,7 @@ const EducationComponent = ({ education }: EducationProps) => {
             {education.map((edu, index) => (
                 <div key={index} className="mt-4">
                     <h3 className="text-lg font-semibold">{edu.degree} - {edu.university}</h3>
-                    <p className="text-gray-600">{edu.startDate} - {edu.endDate}</p>
+                    <p className="text-gray-600">End year: {edu.graduationYear}</p>
                 </div>
             ))}
         </div>
