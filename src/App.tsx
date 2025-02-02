@@ -17,30 +17,31 @@ const SectionHeader = ({title}: { title: string }) => (
 
 const App = () => (
     <div className="bg-gray-100 p-6">
-        <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
-            <HeaderComponent contact={contact}/>
+        {/* Increased max width */}
+        <div className="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-6">
+            <HeaderComponent contact={contact} />
 
             <div className="mt-6">
-                <SectionHeader title="Skills"/>
-                <SkillsComponent skills={skills}/>
+                <SectionHeader title="Skills" />
+                <SkillsComponent skills={skills} />
             </div>
 
             {/* Experience Section */}
             <div className="mt-6">
-                <SectionHeader title="Experience"/>
-                <ExperienceComponent experience={experience}/>
+                <SectionHeader title="Experience" />
+                <ExperienceComponent experience={experience} />
             </div>
 
             {/* Education Section */}
             <div className="mt-6">
-                <SectionHeader title="Education"/>
-                <EducationComponent education={education}/>
+                <SectionHeader title="Education" />
+                <EducationComponent education={education} />
             </div>
 
             {/* Certifications Section */}
             <div className="mt-6">
-                <SectionHeader title="Certifications"/>
-                <CertificationsComponent certifications={certifications}/>
+                <SectionHeader title="Certifications" />
+                <CertificationsComponent certifications={certifications} />
             </div>
         </div>
     </div>
