@@ -102,11 +102,48 @@ export const resumeData: ResumeData = {
         }, {
             role: "Key Developer",
             company: "EPAM Systems",
-            startDate: "Nov 2023",
-            endDate: "Oct 2024 (1 year)",
+            startDate: "Jul 2023",
+            endDate: "Nov 2023 (5 months)",
             responsibilities: [
                 "Implemented Apigee proxies for multiple domains including Client, Broker, and Company to create a unified API for SDK consumers. Integrated rate limiting to efficiently manage varying levels of traffic.",
                 "Provided OpenAPI documentation using Stoplight, ensuring comprehensive coverage of all endpoints, parameters, payloads, and response schemas. Maintained clear language and consistent formatting for improved readability and understanding. Included detailed and interactive examples to demonstrate endpoint usage and scenario handling."
+            ],
+        }, {
+            role: "Order Management System (OMS) researcher",
+            company: "EPAM Systems",
+            startDate: "Feb 2023",
+            endDate: "Jul 2023 (6 months)",
+            responsibilities: [
+                "Investigated and devised methods to implement external tax calculation and special bonuses calculation for customers based on their purchase history.",
+                "Participated in the analysis to determine if Kibo OMS aligns with MACH architecture.",
+                "Scaffolded an API extension application to house the action files for custom functionality.",
+                "Developed an action function that runs prior to an order's status change to 'Completed,' leveraging JavaScript to implement custom logic in action files.",
+                "Designed an action function to fetch order history using page requests and create a predicate. If the predicate evaluates to true, the function calls a REST API to increase the 'bonus account' attribute for the customer.",
+                "Built a mechanism that categorizes customers into specific segments when their 'bonus account' reaches a predefined threshold by invoking a designated API.",
+                "Developed a dedicated backend that returns essential tax-related information based on order details. Created a skeleton function to calculate taxes before an actual API call is made.",
+                "Used Postman to examine and test JSON requests and responses of the OMS platform API.",
+                "Utilized Grunt.js to run build and asset upload commands efficiently."
+            ]
+        }, {
+            role: "Backend Developer",
+            company: "EPAM Systems",
+            startDate: "Feb 2022",
+            endDate: "Jul 2022 (7 months)",
+            responsibilities: [
+                "Implemented a feature that enables users to search for digital asset IDs based on a provided .xls file containing asset links using Java and Spring. Developed both backend and UI functionality to enhance the speed and ease of finding required digital assets.",
+                "Migrated SOAP endpoints to REST to streamline the system's API and improve efficiency. Analyzed XML requests and responses using SoapUI, then examined JSON requests and responses with Postman to generate documentation for the new REST endpoints.",
+                "Wrote unit tests to ensure code quality and maintainability, covering most of the newly introduced code.",
+                "Implemented minor enhancements, including disabling endpoints for development debugging in the production environment to improve system performance and security.",
+                "Conducted a comprehensive analysis of the existing .NET C# codebase to understand the implementation and functionality of hubs-related REST endpoints.",
+                "Designed a scalable, high-performance, and maintainable Java-based architecture for system migration.",
+                "Translated .NET C# code into Java while ensuring logic and functionality remained consistent. Adapted C#-specific constructs and libraries to Java equivalents, including migrating from a .NET-specific spider chart library to an open-source Java alternative.",
+                "Performed thorough unit testing of the migrated endpoints using the Spock Framework, debugging and resolving issues to ensure correctness.",
+                "Utilized JavaScript to scrape hubs' websites for key information such as locales and country lists. Simplified data storage by replacing complex databases and third-party systems with structured JSON files for more efficient data handling.",
+                "Developed comprehensive Postman API tests for both C# and Java endpoints to ensure functional equivalence post-migration.",
+                "Created detailed documentation of the migration process, including C# to Java mappings, challenges encountered, and solutions applied, to assist in future migrations.",
+                "Collaborated closely with the team to coordinate migration efforts and resolve compatibility issues.",
+                "Reviewed and optimized the new Java code for performance improvements, reducing time complexities of algorithms.",
+                "Participated in code reviews to maintain high-quality standards and ensure consistency with the team's coding practices.",
             ],
         }, {
             role: "Backend Developer",
