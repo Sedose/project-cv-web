@@ -8,4 +8,9 @@ export default defineConfig({
         react(),
         tailwindcss(),
     ],
+    base: "/project-cv-web/",
+    server: {
+        open: true,
+        port: 3001,
+    },
 })
